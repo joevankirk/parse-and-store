@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   require 'open-uri'
+  require 'uri'
 
   def index
     @pages = Page.all
@@ -14,9 +15,10 @@ class PagesController < ApplicationController
   def create
     @page = Page.new(page_params)
 
+
     if @page
-      parse(@page.url)
-      @page = Page.create(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @page.url)
+      @url = parse(@page.url)
+      Page.create(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @url)
       redirect_to list_path
     else
       render :new
