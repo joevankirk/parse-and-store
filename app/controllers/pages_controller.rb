@@ -1,14 +1,16 @@
 class PagesController < ApplicationController
   before_action :set_page, only:[:index, :create]
 
-  def home
+  def index
+    @pages = Page.all
   end
 
   def new
     @page = Page.new
   end
 
-  def list
+  def create
+
   end
 
   private
