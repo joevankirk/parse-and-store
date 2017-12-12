@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :set_page, only:[:index, :create]
+
   def home
   end
 
@@ -7,5 +9,11 @@ class PagesController < ApplicationController
   end
 
   def list
+  end
+
+  private
+
+  def set_page
+    @page = Page.find(params[:page_id])
   end
 end
