@@ -1,3 +1,17 @@
-<% @pages.each do |p| %>
-  <p><%= p.id %>. <%= p.url %></p>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @pages.each do |p| %>
+    <div class="col-xs-12 col-sm-12">
+      <h4><%= p.url %></h4>
+      <h5>H1</h5>
+      <p><%= p.h1 %></p>
+      <h5>H2</h5>
+      <p><%= p.h2 %></p>
+      <h5>H3</h5>
+      <p><%= p.h3 %></p>
+      <h5>Links</h5>
+      <p><%= p.links %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
