@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.all.reverse
+    @db_empty = Page.count == 0
   end
 
   def new
@@ -37,4 +38,5 @@ class PagesController < ApplicationController
   def page_params
     params.require(:page).permit(:url)
   end
+
 end
