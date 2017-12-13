@@ -7,9 +7,7 @@ class PagesController < ApplicationController
   end
 
   def new
-    puts Dir.pwd
     @page = Page.new
-
   end
 
   def create
