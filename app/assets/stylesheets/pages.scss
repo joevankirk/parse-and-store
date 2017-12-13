@@ -13,7 +13,6 @@
 .banner p {
   font-size: 24px;
   font-weight: lighter;
-  // opacity: 0.8;
   margin-bottom: 30px;
 }
 
@@ -21,6 +20,9 @@ input {
   border-radius: 5px 5px 0 0;
   height: 50px;
   width: 100%;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(210,210,210);
+  }
 }
 
 .button {

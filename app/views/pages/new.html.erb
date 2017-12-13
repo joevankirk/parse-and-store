@@ -1,7 +1,7 @@
 <div class="banner">
   <div class="banner-content">
     <h1>Welcome to Joe's Parse and Store<h1>
-    <p>Enter the full web address for your favorite site</p>
+    <p>Enter the full web address for your favorite site or <%= link_to "see the directory", list_path %></p>
     <%= form_for(@page) do |f| %>
       <%= f.text_field :url, placeholder: "https://www.yourbias.is/" %>
       <%= f.submit "Submit", class: "button" %>
