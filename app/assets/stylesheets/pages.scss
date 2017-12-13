@@ -1,3 +1,48 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.banner {
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 43px;
+}
+.banner p {
+  font-size: 24px;
+  font-weight: lighter;
+  // opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+input {
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  width: 100%;
+}
+
+.button {
+  border-radius: 0 0 5px 5px;
+  height: 50px;
+  width: 100%;
+  border-width: 3px;
+  border-color: #2A4494;
+  font-size: 20px;
+  opacity: 0.8;
+  position: relative;
+  top: -6px;
+  color: white;
+  background: #2A4494;
+  &:hover {
+    background-color: white;
+    border-color: #2A4494;
+    color: #2A4494;
+  }
+}
+
+#page_url {
+  font-size: 24px;
+  font-weight:normal;
+}
