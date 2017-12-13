@@ -2,38 +2,23 @@
 
 RESTful API parsing and storing content from the inputted web address. Built with Rails 5.1.4.
 
-## Installing / Getting started
-
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
-```
-
-Here you should say what actually happens when you execute the code above.
-
-## Developing
+## Installing/Developing
 
 Here's a brief intro about what a developer must do in order to start developing
 the project further:
 
 ```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
+git clone git@github.com:joevankirk/parse-and-store.git
+cd parse-and-store
 ```
 
-And state what happens step-by-step.
+Clone the repository and move into the project folder to get started.
 
 ## Features
 
 What's all the bells and whistles this project can perform?
-* What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do this
+* Parses HTML of inputted web address and stores the content
+* The list post shows the parsed URL as well as the stored content from various HTML selectors
 
 
 ## Contributing
