@@ -1,24 +1,27 @@
-# README
+# Parse and Store
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RESTful API parsing and storing content from the inputted web address. Built with Rails 5.1.4.
 
-Things you may want to cover:
+## Installing/Developing
 
-* Ruby version
+Here's a brief intro about what a developer must do in order to start developing
+the project further:
 
-* System dependencies
+```shell
+git clone git@github.com:joevankirk/parse-and-store.git
+cd parse-and-store
+```
 
-* Configuration
+Clone the repository and move into the project folder to get started.
 
-* Database creation
+## Features
 
-* Database initialization
+What's all the bells and whistles this project can perform?
+* Parses HTML of inputted web address and stores the content
+* The list post shows the parsed URL as well as the stored content from various HTML selectors
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
-
-* ...
+If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests are warmly welcome.
