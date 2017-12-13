@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   require 'uri'
 
   def index
-    @pages = Page.all
+    @pages = Page.all.reverse
   end
 
   def new
