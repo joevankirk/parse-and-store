@@ -1,6 +1,6 @@
 # Parse and Store
 
-RESTful API parsing and storing content from the inputted web address. Built with Rails 5.1.4.
+RESTful API parsing and storing content from the inputted web address. Built with Rails 5.1.4 and Ruby 2.4.2.
 
 ## Installing/Developing
 
