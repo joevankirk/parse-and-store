@@ -15,10 +15,9 @@ class PagesController < ApplicationController
   def create
     @page = Page.new(page_params)
 
-
-    if @page
-      @url = parse(@page.url)
-      Page.create(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @url)
+    if @page.save
+      parse(@page.url)
+      Page.update(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @page.url)
       redirect_to list_path
     else
       render :new
