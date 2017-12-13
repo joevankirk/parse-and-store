@@ -1,8 +1,17 @@
 <div class="container">
-  <h1 class="text-center home"><%= link_to "Joe's Parse and Store", root_path %></h1>
+  <h1 class="text-center home">Directory</h1>
   <div class="row">
+  <% if @db_empty %>
+    <div class="text-center">
+      </br>
+      </br>
+      <p><%= link_to "Add a site", root_path, class: "button btn-lg list" %></p>
+    </div>
+    <% else %>
     <% @pages.each do |p| %>
     <div class="col-xs-12 card">
+    <% byebug %>
+      <h1><%= p.id %></h1>
       <h4><%= p.url %></h4>
       <h5>H1</h5>
       <p><%= p.h1 %></p>
@@ -13,6 +22,7 @@
       <h5>Links</h5>
       <p><%= p.links %></p>
     </div>
+    <% end %>
   <% end %>
   </div>
 </div>
