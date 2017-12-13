@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.all.reverse
-    @db_empty = Page.count == 0
+    @db_empty = Page.count.zero?
   end
 
   def new
