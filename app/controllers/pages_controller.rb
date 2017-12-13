@@ -14,8 +14,8 @@ class PagesController < ApplicationController
     @page = Page.new(page_params)
 
     if @page.save
-      @url = parse(@page.url)
-      Page.update(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @url)
+      parse(@page.url)
+      Page.update(h1: @h1, h2: @h2, h3: @h3, links: @links, url: @page.url)
       redirect_to list_path
     else
       render :new
